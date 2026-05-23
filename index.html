@@ -22,8 +22,9 @@
       font-family: Georgia, "Times New Roman", serif;
       color:var(--text);
       background:
-        linear-gradient(rgba(255,250,246,.35), rgba(255,250,246,.28)),
-        url("assets/wedding-background.jpg") center top / cover fixed no-repeat;
+        linear-gradient(rgba(255,250,246,.18), rgba(255,250,246,.12)),
+        url("assets/wedding-background.jpg") center top / min(100vw, 820px) auto fixed no-repeat,
+        #f5ece7;
       line-height:1.55;
     }
     body::before{
@@ -32,7 +33,7 @@
       inset:0;
       pointer-events:none;
       background:
-        radial-gradient(ellipse at center, rgba(255,250,246,.78) 0%, rgba(255,250,246,.64) 35%, rgba(255,250,246,.18) 68%, rgba(255,250,246,0) 100%);
+        radial-gradient(ellipse at center, rgba(255,250,246,.34) 0%, rgba(255,250,246,.2) 42%, rgba(255,250,246,.04) 72%, rgba(255,250,246,0) 100%);
     }
     .page{
       position:relative;
@@ -47,9 +48,14 @@
       min-height:calc(100vh - 36px);
       padding:58px clamp(22px, 6vw, 94px) 38px;
       text-align:center;
-      background:rgba(255,250,246,.66);
+      background:
+        linear-gradient(rgba(255,250,246,.3), rgba(255,250,246,.22)),
+        url("assets/wedding-background.jpg") center top / cover no-repeat;
       box-shadow:0 24px 80px rgba(111,73,59,.14);
       overflow:hidden;
+    }
+    .invite::before{
+      background:radial-gradient(ellipse at center, rgba(255,250,246,.46) 0%, rgba(255,250,246,.3) 48%, rgba(255,250,246,.08) 78%, rgba(255,250,246,0) 100%);
     }
     .invite::before,
     .invite::after{
@@ -265,7 +271,7 @@
         min-width:320px;
       }
       body::before{
-        background:linear-gradient(rgba(255,250,246,.54), rgba(255,250,246,.48));
+        background:linear-gradient(rgba(255,250,246,.18), rgba(255,250,246,.14));
       }
       .page{
         min-height:100svh;
@@ -276,7 +282,9 @@
         width:100%;
         max-width:430px;
         padding:26px 16px 22px;
-        background:rgba(255,250,246,.72);
+        background:
+          linear-gradient(rgba(255,250,246,.34), rgba(255,250,246,.24)),
+          url("assets/wedding-background.jpg") center top / cover no-repeat;
         box-shadow:0 10px 34px rgba(111,73,59,.12);
       }
       .invite::before{
