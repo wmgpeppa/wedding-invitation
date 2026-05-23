@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zehua Han & Yaxin Guo Wedding</title>
+  <style>
+    :root{
+      --bg:#f7f1ee;
+      --card:#fffaf8;
+      --blush:#c98d8d;
+      --text:#2d2624;
+      --muted:#7c6d68;
+      --line:#ead7d2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, #fff8f6 0%, var(--bg) 42%, #f3ece8 100%);
+      line-height:1.55;
+    }
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:32px 20px 64px;
+    }
+    .hero{
+      text-align:center;
+      padding:28px 20px 18px;
+    }
+    .monogram{
+      color:var(--blush);
+      letter-spacing:.25em;
+      font-size:clamp(28px,5vw,52px);
+      margin:8px 0 22px;
+    }
+    .kicker{
+      color:var(--blush);
+      text-transform:uppercase;
+      letter-spacing:.22em;
+      font-size:14px;
+      margin-bottom:10px;
+    }
+    h1{
+      font-weight:500;
+      font-size:clamp(44px,9vw,92px);
+      letter-spacing:.12em;
+      color:var(--blush);
+      margin:0 0 18px;
+    }
+    .subtitle{
+      max-width:700px;
+      margin:0 auto 24px;
+      font-size:clamp(20px,2.7vw,34px);
+    }
+    .names{
+      font-size:clamp(34px,5vw,64px);
+      line-height:1.2;
+      margin:10px 0;
+    }
+    .and{
+      color:var(--blush);
+      font-style:italic;
+      font-size:clamp(26px,4vw,42px);
+      margin:6px 0;
+    }
+    .tagline{
+      color:var(--blush);
+      font-style:italic;
+      font-size:clamp(18px,2.5vw,30px);
+      margin:28px auto 18px;
+    }
+    .actions{
+      display:flex;
+      gap:14px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin:24px 0 16px;
+    }
+    .btn{
+      text-decoration:none;
+      padding:14px 22px;
+      border-radius:999px;
+      border:1px solid var(--blush);
+      color:var(--text);
+      background:#fff;
+      transition:.2s ease;
+      font-size:16px;
+    }
+    .btn.primary{
+      background:var(--blush);
+      color:white;
+    }
+    .btn:hover{transform:translateY(-1px); box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    .grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:26px;
+      margin-top:28px;
+      align-items:start;
+    }
+    .card{
+      background:rgba(255,250,248,.88);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:28px;
+      backdrop-filter: blur(4px);
+      box-shadow:0 12px 40px rgba(100,70,60,.06);
+    }
+    .section-title{
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:.24em;
+      color:var(--blush);
+      margin:0 0 14px;
+    }
+    .detail{
+      margin-bottom:18px;
+    }
+    .detail strong{
+      display:block;
+      font-size:18px;
+      margin-bottom:4px;
+    }
+    .detail span{
+      color:var(--muted);
+    }
+    .invite-preview{
+      width:100%;
+      display:block;
+      border-radius:20px;
+      border:1px solid var(--line);
+    }
+    .footer-note{
+      text-align:center;
+      color:var(--muted);
+      margin-top:28px;
+      font-size:15px;
+    }
+    .small-link{
+      word-break:break-all;
+      color:var(--muted);
+      font-size:14px;
+      margin-top:12px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+      .wrap{padding:18px 14px 44px}
+      .card{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="monogram">Z&nbsp;&nbsp;Y</div>
+      <div class="kicker">A Celebration of Love</div>
+      <h1>LOVE</h1>
+      <div class="subtitle">Together with our families, we invite you to celebrate the marriage of</div>
+      <div class="names">Zehua Han</div>
+      <div class="and">and</div>
+      <div class="names">Yaxin Guo</div>
+      <div class="tagline">Come for the vows. Stay for the champagne.</div>
+      <div class="actions">
+        <a class="btn primary" href="https://forms.gle/NnbweUvVderALMN77" target="_blank" rel="noopener">Click here to fill RSVP</a>
+      </div>
+    </section>
+
+    <section class="grid" id="details">
+      <div class="card">
+        <div class="section-title">Wedding Details</div>
+
+        <div class="detail">
+          <strong>Date</strong>
+          <span>Monday, August 17, 2026</span>
+        </div>
+
+        <div class="detail">
+          <strong>Time</strong>
+          <span>4:30 PM</span>
+        </div>
+
+        <div class="detail">
+          <strong>Venue</strong>
+          <span>Trail Hub<br/>722 Chalk Lake Road, Uxbridge, ON, Canada</span>
+        </div>
+
+        <div class="detail">
+          <strong>Celebration</strong>
+          <span>An open-air ceremony, followed by an evening of fine food, an open bar, and a celebration filled with laughter, music, and dancing.</span>
+        </div>
+
+        <div class="detail">
+          <strong>Dress Code</strong>
+          <span>Elegant · Soft Romance</span>
+        </div>
+
+        <div class="detail">
+          <strong>RSVP By</strong>
+          <span>June 17, 2026</span>
+        </div>
+
+        <div class="actions" style="justify-content:flex-start; margin-top:20px;">
+          <a class="btn primary" href="https://forms.gle/NnbweUvVderALMN77" target="_blank" rel="noopener">Open RSVP Form</a>
+        </div>
+        <div class="small-link">Direct RSVP link: https://forms.gle/NnbweUvVderALMN77</div>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      We look forward to celebrating this beautiful moment with you.
+    </div>
+  </div>
+</body>
+</html>
